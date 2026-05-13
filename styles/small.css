@@ -36,6 +36,7 @@ header span {
 /********************Navigation Bar******************************/
 .navigation {
     display: none;
+    color: white;
 }
 .navigation.show{
     display: block;
@@ -59,6 +60,7 @@ header span {
 }
 .navigation li.current{
     background-color: #7a6666;
+    color: white;
 }
 .navigation li.current a {
     color: white;
