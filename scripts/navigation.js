@@ -128,5 +128,3 @@ wddButton.addEventListener("click", () => {
     const wddOnly = courses.filter(course => course.subject === "WDD");
     displayCourses(wddOnly);
 });
-// displayin credits
-document.getElementById("total-credits").innerHTML = displayCourses(totalCredits);
