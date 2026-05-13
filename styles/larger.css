@@ -5,18 +5,40 @@
     header {
         grid-template-columns: 24px auto;
     }
-    header, main, nav, footer {
+    header, main, footer {
         max-width: 900px;
         margin: 0 auto;
     }
     .navigation {
         display: block;
-        align-items: start;
+        align-items: end;
+        background-color: #08589e;
+        width: 100%;
     }
     .navigation ul {
         display: flex;
+        max-width: 900px;
+        margin: 0 auto;
     }
     .navigation a {
         border: none;
+    }
+/********************Main Section********************************/
+    main h1 {
+        text-align: justify;
+    }
+    .first-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .button-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 10px;
+    }
+    .button-section button {
+        flex: 1;
     }
 }

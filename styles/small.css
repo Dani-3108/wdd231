@@ -1,9 +1,11 @@
+body {
+    margin: 5px 5px 0 5px;
+}
 /***********HEADER*********************/
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 5px 0px 5px 10px;
-    border-bottom: solid 1px black;
+    padding: 5px 0px 5px;
     align-items: end;
     column-gap: 8px;
 }
@@ -13,14 +15,14 @@ header img {
     height: auto;
     padding-bottom: 5px;
 }
-header span{
+header span {
     font-size: 1.2rem;
 }
 /******************Hamburger Button****************************/
 .hamburger {
     background: none;
     border: none;
-    color: #451fc2;
+    color: black;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -38,24 +40,128 @@ header span{
 .navigation.show{
     display: block;
     grid-column: 1 / -1;
+    border: 0;
 }
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+.navigation li {
+    background-color: #08589e;
+}
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #451fc2;
+    color: white;
     text-decoration: none;
     border-bottom: solid 1px black;
 }
 .navigation li.current{
-    background-color: #eee;
+    background-color: #7a6666;
 }
 .navigation a:hover{
-    background-color: orange;
+    background-color: rgb(220, 93, 9);
+}
+/********************Main Section********************************/
+main h1 {
+    text-align: center;
+}
+.first-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about-me {
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+}
+.about-me h2{
+    background-color: #08589e;
+    font-family: "Inknut Antiqua", serif;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+}
+.about-me p {
+    font-family: "Cormorant Garamond", serif;
+    margin: 10px;
+    font-size: larger;
+}
+.student-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+}
+.student-photo h2{
+    align-self: stretch;
+    background-color: #08589e;
+    font-family: "Inknut Antiqua", serif;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+}
+.student-photo img {
+    margin: 10px;
+    border-radius: 5px;
+}
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.second-section h2{
+    background-color: #08589e;
+    font-family: "Inknut Antiqua", serif;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+}
+.button-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-section button{
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bolder;
+}
+.second-section p {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: larger;
+}
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+.course-list li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(143, 185, 222);
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+}
+.completed::before {
+    content: "\2713";
 }
 /********************Footer Section******************************/
 footer {
