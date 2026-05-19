@@ -1,0 +1,18 @@
+{
+    "family_name": "Osorio",
+    "move_in_date": "07-27-2026",
+    "number_of_members": 2,
+    "visited_by_bishopric": true,
+    "family_members":[
+        {
+            "name":"Daniel",
+            "gender":"male",
+            "birthdate":"08-31-2001"
+        },
+        {
+            "name":"Kenny",
+            "gender":"female",
+            "birthdate":"01-05-1998"
+        }
+    ]
+}
