@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Chamber of Commerce Website | Daniel Osorio |</title>
+    <meta name="description" content="This website contains the directory of the chamber of commerce of the city of Vancouver, BC. Contains the list of the members of the chamber of commerce.">
+    <meta name="author" content="Daniel Osorio">
+    <!--Facebook meta tags-->
+    <meta property="og:title" content="WDD 231 Chamber of Commerce Website | Daniel Osorio |">
+    <meta property="og:description" content="This website contains the directory of the chamber of commerce of the city of Vancouver, BC. Contains the list of the members of the chamber of commerce.">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <!--Link to Google fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--Link for CSS and JavaScript-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/buildings.svg" alt="Site Logo" width="1" height="1">
+        <span>Vancouver Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+               <li class="current"><a href="#">Home</a></li>
+               <li><a href="#">Directory</a></li>
+               <li><a href="#">Join</a></li> 
+               <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Members Directory</h1>
+        <div class="menu">
+            <button id="grid-button">Grid</button>
+            <button id="list-button">List</button>
+        </div>
+        <section id="directory-cards" class="grid">
+        </section>
+    </main>
+    <footer>
+        <div class="f-section-one">
+            <p>Vancouver Chamber of Commerce</p>
+            <p>595 Howe St Suite 1220, Vancouver, BC V6C 2T5</p>
+            <a href="mailto:vancouverco@bcchamber.org">vancouverco@bcchamber.org</a>
+            <a href="tel:+16046830700">604.683.0700</a>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/@bcchamberofcom" target="_blank"><img src="images/youtube.svg" alt="Youtube Logo" width="16" height="16"></a>
+            <a href="https://x.com/bcchamberofcom" target="_blank"><img src="images/twitter-x.svg" alt="Twitter Logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/company/bc-chamber-of-commerce/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+        </div>
+        <div class="f-section-two">
+            <p>WDD 231 Class Project</p>
+            <p>Ⓒ <span id="currentyear"></span> Vancouver Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

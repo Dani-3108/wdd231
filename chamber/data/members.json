@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "The Old Spaghetti Factory (Gastown)",
+            "address": "53 Water St, Vancouver, BC V6B 1A1",
+            "phone": "(604) 684-1288",
+            "website": "https://oldspaghettifactory.ca",
+            "image": "spaghetti-factory.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Capilano Suspension Bridge Park",
+            "address": "3735 Capilano Road, North Vancouver, BC V7R 4J1",
+            "phone": "(604) 985-7474",
+            "website": "https://www.capbridge.com",
+            "image": "capilano_suspension_bridge.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Cypress Mountain",
+            "address": "6000 Cypress Bowl Road, West Vancouver, BC V7V 3N9",
+            "phone": "(604) 926-5612",
+            "website": "https://www.cypressmountain.com",
+            "image": "cypress_mountain.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Grouse Mountain",
+            "address": "6400 Nancy Greene Way, North Vancouver, BC V7R 4K9",
+            "phone": "(604) 980-9311",
+            "website": "https://www.grousemountain.com",
+            "image": "grouse-mountain.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Vancouver Aquarium",
+            "address": "845 Avison Way, Vancouver, BC V6G 3E2",
+            "phone": "(778) 655-9554",
+            "website": "https://www.vanaqua.org",
+            "image": "vancouver-aquarium.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "VanDusen Botanical Garden",
+            "address": "5251 Oak Street, Vancouver, BC V6M 4H1",
+            "phone": "(604) 257-8463",
+            "website": "https://vandusengarden.org",
+            "image": "vandusen-botanical.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Bloedel Conservatory",
+            "address": "4600 Cambie St, Vancouver, BC V5Y 2M4",
+            "phone": "(604) 257-8584",
+            "website": "https://bloedelconservatory.ca",
+            "image": "bloedel-conservatory.webp",
+            "membershipLevel": 2
+        }
+    ]
+}
