@@ -29,7 +29,7 @@ const displayMembers = (members) => {
         memberPhone.textContent = `${member.phone}`;
         //setting webiste attributes
         memberWebsite.setAttribute("href", member.website)
-        memberWebsite.textContent = "Visit Website";
+        memberWebsite.textContent = `Visit Website of ${member.name}`;
         //setting image attributes
         memberPortrait.setAttribute("src", `images/${member.image}`);
         memberPortrait.setAttribute("alt", `${member.name} logo`);
