@@ -82,6 +82,7 @@ footer p {
 }
 footer a {
     display: block;
+    padding: .4rem;
     text-decoration: none;
     color: black;
     font-family: "Cormorant Garamond", serif;
