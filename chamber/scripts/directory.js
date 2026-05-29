@@ -1,16 +1,18 @@
+//Footer variables section
 const today = new Date();
 document.getElementById("currentyear").innerHTML = today.getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
-////////////Hamburger Button Section/////////////////////
+////////////Hamburger Button Section & Navigation bar section//////////////
 const hamButton = document.querySelector("#nav-button");
-////////////Navigation Bar Section/////////////////////
+//Navigation bar
 const navBar = document.querySelector("#nav-bar");
 //Event listener
 hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
     navBar.classList.toggle("show");
 });
-////////////////////////////////////////
+////// Populating cards directory section//////////////////////////
+//Variables
 const membersFile = "data/members.json";
 const directoryCards = document.querySelector("#directory-cards");
 //Function
@@ -52,7 +54,7 @@ async function getMembersData() {
     displayMembers(data.members);
 }
 getMembersData();
-///////////////// event listeners for directory
+//event listeners for directory
 const gridButton = document.querySelector("#grid-button");
 const listButton = document.querySelector("#list-button");
 

@@ -11,7 +11,7 @@
         grid-column: 3;
         background-color: #08589e;
         width: 100%;
-        
+
     }
     .navigation ul {
         display: flex;
@@ -25,11 +25,7 @@
     /*******************Footer*************************/
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-    /*******************Section*************************/
-    .grid {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
