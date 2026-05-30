@@ -1,3 +1,9 @@
+///import weather functions
+import { apiFetch, forecastApiFetch } from "./weather.mjs";
+
+//import spotlight functions 
+import { getMembersData } from "./spotlight.mjs";
+
 //Footer variables section
 const today = new Date();
 document.getElementById("currentyear").innerHTML = today.getFullYear();
@@ -11,3 +17,7 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
     navBar.classList.toggle("show");
 });
+//CALLING FUNCTIONS
+apiFetch();
+forecastApiFetch();
+getMembersData();

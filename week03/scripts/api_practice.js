@@ -30,5 +30,5 @@ function displayResults(data) {
     let description = data.weather[0].description;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute('alt', `${data.weather[0].description}`);
-    captionDescription.textContent = `${description}`;
+    captionDescription.textContent = `${description}`;    
 }

@@ -1,11 +1,14 @@
 @media screen and (min-width:608px) {
+
     /**********Hamburger & navigation bar**************/
     .hamburger {
         display: none;
     }
+
     header {
         grid-template-columns: 24px auto auto;
     }
+
     .navigation {
         display: block;
         grid-column: 3;
@@ -13,19 +16,38 @@
         width: 100%;
 
     }
+
     .navigation ul {
         display: flex;
         max-width: 900px;
         margin: 0 auto;
         justify-content: space-around;
     }
+
     .navigation a {
         border: none;
     }
+
     /*******************Footer*************************/
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /*****************main section******************/
+    .hero a {
+        padding: 2rem 4rem;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    main h1 {
+        text-align: justify;
+    }
+
+    .first-three-sections,
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
