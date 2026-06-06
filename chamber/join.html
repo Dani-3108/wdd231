@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 join the Chamber of Commerce Website | Daniel Osorio |</title>
+    <meta name="description"
+        content="This website contains the submition form for the chamber of commerce of the city of Vancouver, BC. Contains the required information to join and information about the membership types and its benefits.">
+    <meta name="author" content="Daniel Osorio">
+    <!--Facebook meta tags-->
+    <meta property="og:title" content="WDD 231 join the Chamber of Commerce Website | Daniel Osorio |">
+    <meta property="og:description"
+        content="This website contains the submition form for the chamber of commerce of the city of Vancouver, BC. Contains the required information to join and information about the membership types and its benefits.">
+    <meta property="og:image" content="https://dani-3108.github.io/wdd231/chamber/images/buildings.svg">
+    <meta property="og:url" content="https://dani-3108.github.io/wdd231/chamber/directory.html">
+    <!--Fav icon reference-->
+    <link rel="icon" href="favicon.ico">
+    <!--Link to Google fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--Link for CSS and JavaScript-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/buildings.svg" alt="Site Logo" width="1" height="1">
+        <span>Vancouver Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href=" index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <h2 class="form-header">Become a member of the Vancouver Chamber of Commerce!</h2>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Your information</legend>
+            <label for="firstname">First Name*<input type="text" name="firstname" id="firstname" required autocomplete="given-name" title="Enter your first name"></label>
+            <label for="lastname">Last Name*<input type="text" name="lastname" id="lastname" required autocomplete="family-name" title="Enter your last name"></label>
+            <label for="orgtitle">Title within your organization<input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" pattern="[a-zA-Z\- ]{7,}" title="Must contain only letters, hyphens, and spaces, minimum 7 characters"></label>
+            <label for="youremail">Company email address*<input type="email" name="youremail" id="youremail" required autocomplete="email" title="Enter your email address" placeholder="example@company.com"></label>
+            <label for="mobilephone">Mobile Phone Number*<input type="tel" name="mobilephone" id="mobilephone" required autocomplete="tel" title="Enter your phone Number"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Organization / Business information</legend>
+            <label for="orgname">Organization / business name* <input type="text" name="orgname" id="orgname" required autocomplete="organization" title="Enter your organization / business name"></label>
+            <label for="orgdescription">Description of your organization / business<textarea name="orgdescription" id="orgdescription" title="Enter a description of your busines / organization"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend>Membership</legend>
+            <label for="membershiplevel"> Membership level*
+                <select name="membershiplevel" id="membershiplevel" required>
+                    <option value="" disabled selected> Select a membership...</option>
+                    <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+        </fieldset>
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input class="submitButton" type="submit" value="Request to become a member!">
+      </form>
+      <section class="membership-cards">
+        <div class="membership-card">
+            <h3>NP Membership</h3>
+            <a href="#" class="membership-link" data-modal="npmembership">Learn More</a>
+            <dialog id="npmembership">
+                <button class="closeModal">❌</button>
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>Access to member networking receptions</li>
+                    <li>Up to 50% savings on event tickets compared to non-members</li>
+                    <li>Special deals and discounts up to 10% from 3,000+ local and national brands with MemberPerks</li>
+                </ul>
+            </dialog>
+        </div>
+        <div class="membership-card">
+            <h3>Bronze Membership</h3>
+            <a href="#" class="membership-link" data-modal="bronze">Learn More</a>
+            <dialog id="bronze">
+                <button class="closeModal">❌</button>
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>Access to NP membership benefits</li>
+                    <li>Bring up to three guests to events at the member rate</li>
+                    <li>Special deals and discounts up to 40% from 3,000+ local and national brands with MemberPerks</li>
+                </ul>
+            </dialog>
+        </div>
+        <div class="membership-card">
+            <h3>Silver Membership</h3>
+            <a href="#" class="membership-link" data-modal="silver">Learn More</a>
+            <dialog id="silver">
+                <button class="closeModal">❌</button>
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>Unlimited access to member networking receptions</li>
+                    <li>Bring up to five guests to events at the member rate</li>
+                    <li>All staff have access to special deals and discounts up to 60% from 3,000+ local and national brands with</li>
+                </ul>
+            </dialog>
+        </div>
+        <div class="membership-card">
+            <h3>Gold Membership</h3>
+            <a href="#" class="membership-link" data-modal="gold">Learn More</a>
+            <dialog id="gold">
+                <button class="closeModal">❌</button>
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>All access to NP, bronze, silver benefits</li>
+                    <li>Priority registration access to special</li>
+                    <li>Special deals and discounts up to 75% from 3,000+ local and national brands with MemberPerks</li>
+                </ul>
+            </dialog>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="f-section-one">
+            <p>Vancouver Chamber of Commerce</p>
+            <p>595 Howe St Suite 1220, Vancouver, BC V6C 2T5</p>
+            <a href="mailto:vancouverco@bcchamber.org">vancouverco@bcchamber.org</a>
+            <a href="tel:+16046830700">604.683.0700</a>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/@bcchamberofcom" target="_blank"><img src="images/youtube.svg"
+                    alt="Youtube Logo" width="16" height="16"></a>
+            <a href="https://x.com/bcchamberofcom" target="_blank"><img src="images/twitter-x.svg" alt="Twitter Logo"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/company/bc-chamber-of-commerce/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+        </div>
+        <div class="f-section-two">
+            <p>WDD 231 Class Project</p>
+            <p>Ⓒ <span id="currentyear"></span> Vancouver Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

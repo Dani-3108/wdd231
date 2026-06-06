@@ -1,0 +1,136 @@
+main {
+    margin-bottom: 10px;
+    background-color: #dfd6d68c;
+}
+main h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    padding: 1rem;
+}
+
+fieldset {
+    background-color: antiquewhite;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-family: "Inknut Antiqua", serif;
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+    background-color: #dfd6d68c;
+    border: 1px solid black;
+    color: black;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+}
+
+.submitButton {
+    background-color: #08589e;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-family: "Fira Code", monospace;
+    width: 100%;
+}
+
+
+.formheader {
+    font-size: 4rem;
+}
+
+dialog {
+    max-width: 600px;
+    width: 80%;
+    padding: 1.5rem;
+    background-color: antiquewhite;
+    font-family: "Cormorant Garamond", serif;
+    border: 1px solid rgba(0, 0, 0, 0.878);
+    border-radius: .25rem;
+    box-shadow: 0 0 3rem #777;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.membership-cards {
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.membership-card {
+    background-color: antiquewhite;
+    border: 1px solid #0000004d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px #777;
+}
+
+.membership-card h3 {
+    color: #08589e;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.membership-card {
+    animation: fadein 0.6s ease-in forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.membership-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.membership-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.membership-card:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+#results {
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+#results p {
+    margin-bottom: 0.5rem;
+}

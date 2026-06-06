@@ -1,0 +1,50 @@
+@media screen and (min-width:608px) {
+
+    /**********Hamburger & navigation bar**************/
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto auto;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: 3;
+        background-color: #08589e;
+        width: 100%;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*******************Footer*************************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*****main section****/
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+    
+    .form-header {
+        grid-column: 1 / -1;
+    }
+    .thankyou-main {
+        display: block;
+        padding: 2rem;
+    }
+}
