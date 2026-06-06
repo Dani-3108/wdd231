@@ -34,11 +34,15 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     /*****main section****/
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        align-items: start;
-    }
+   .join-main {
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+       align-items: start;
+   }
+
+   .form-header {
+       grid-column: 1 / -1;
+   }
     
     .form-header {
         grid-column: 1 / -1;
