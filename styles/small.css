@@ -196,3 +196,24 @@ footer {
 .social a:hover{
     background-color: orange;
 }
+/****************course-details section***********/
+.course-details {
+    max-width: 600px;
+    width: 90%;
+    padding: 1.5rem;
+    background-color: antiquewhite;
+    font-family: "Cormorant Garamond", serif;
+    border: 1px solid rgba(0, 0, 0, 0.878);
+    border-radius: .25rem;
+    box-shadow: 0 0 3rem #777;
+}
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}

@@ -94,6 +94,26 @@ const courses = [
 ]
 //Populating the ul
 const courseList = document.querySelector('#course-list');
+// dialog variables
+const courseDetails = document.querySelector("#course-details");
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p>${course.credits} credits</p>
+        <p>Certificate: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p>Technologies: ${course.technology.join(", ")}</p>
+    `;
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+
 function displayCourses(courses) {
     courseList.innerHTML = "";
     courses.forEach(course => {
@@ -102,6 +122,9 @@ function displayCourses(courses) {
         if (course.completed === true) {
             li.classList.add("completed");
         }
+        li.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
         courseList.appendChild(li);
     }); // forEach ends here
 
