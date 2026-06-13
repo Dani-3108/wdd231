@@ -1,0 +1,48 @@
+@media screen and (min-width:641px) {
+
+    /**********Hamburger & navigation bar**************/
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto auto;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: 3;
+        background-color: #08589e;
+        width: 100%;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*******************Footer*************************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*discover section*/
+    #places-section div {
+        display: grid;
+        grid-template-areas:
+        "picture name"
+        "picture description"
+        "picture address"
+        "picture button";
+    }
+    #places-section figure img:hover {
+        transform: scale(1.1);
+    }
+}

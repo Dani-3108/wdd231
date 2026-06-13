@@ -1,0 +1,82 @@
+main {
+    background-color: #dfd6d68c;
+    margin-bottom: 10px;
+}
+main h1 {
+    text-align: center;
+}
+#places-section div {
+    border: 1px solid black;
+    overflow: hidden;
+    display: grid;
+    background-color: #4baec54b;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-areas: 
+    "name"
+    "picture"
+    "description"
+    "address"
+    "button";
+}
+#places-section h2 {
+    grid-area: name;
+    font-family: "Inknut Antiqua", serif;
+    text-align: center;
+}
+#places-section figure {
+    grid-area: picture;
+    margin: 0;
+}
+#places-section figure img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+#places-section address {
+    grid-area: address;
+    font-family: "Cormorant Garamond", serif;
+}
+#places-section p {
+    grid-area: description;
+    font-family: "Cormorant Garamond", serif;
+}
+#places-section button {
+    grid-area: button;
+    font-family: "Cormorant Garamond", serif;
+    padding: 0.5rem 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic  ;
+}
+#places-section button:hover {
+    background-color: orange;
+}
+#visit-message {
+    background-color: #4baec54b;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+#visit-text {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#close-message {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
