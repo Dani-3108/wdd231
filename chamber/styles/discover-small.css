@@ -27,6 +27,7 @@ main h1 {
 #places-section figure {
     grid-area: picture;
     margin: 0;
+    width: 100%;
 }
 #places-section figure img {
     border-radius: 10px;
