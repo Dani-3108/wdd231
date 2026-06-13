@@ -27,11 +27,11 @@ main h1 {
 #places-section figure {
     grid-area: picture;
     margin: 0;
-    width: 100%;
 }
 #places-section figure img {
     border-radius: 10px;
     transition: transform 0.3s ease;
+    width: 100%;
 }
 #places-section address {
     grid-area: address;
