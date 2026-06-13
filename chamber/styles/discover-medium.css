@@ -41,6 +41,7 @@
         "picture description"
         "picture address"
         "picture button";
+        gap: 0 1rem;
     }
     #places-section figure img:hover {
         transform: scale(1.1);
