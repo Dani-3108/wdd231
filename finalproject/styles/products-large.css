@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+    /**Hamburger menu and navigation bar***/
+    #hamburger {
+        display: none;
+    }
+
+    nav.menu {
+        position: static;
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+}

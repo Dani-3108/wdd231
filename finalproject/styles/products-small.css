@@ -1,0 +1,22 @@
+/* How It Works page section*/
+main section {
+    border: 1px solid #9783FF;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+}
+main section h2 {
+    font-size: 3rem;
+}
+.howitworksh2 {
+    font-size: 4rem;
+}
+main section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+}

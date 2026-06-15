@@ -1,0 +1,43 @@
+/********** main section index page*********/
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+/**** What We Do section cards of index page ****/
+.what-we-do {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #11064a;
+    border-top: 1px solid #9783FF;
+}
+
+.what-we-do h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.what-we-do>h3 {
+    font-size: 2rem;
+}
+
+.what-we-do section {
+    background-color: #111111;
+    border: 1px solid #9783FF;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
