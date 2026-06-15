@@ -14,23 +14,10 @@
     .hero h2 {
         font-size: 3.5rem;
     }
-    .what-we-do {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3rem;
-
-    }
-    .what-we-do>h3 {
-        width: 100%;
-    }
-    .what-we-do section {
-        flex: 1
-    }
-    .what-we-do section h3 {
-        text-align: center;
-    }
-    .what-we-do section p {
-        text-align: center;
+    /**** What We Do section cards of index page ****/
+    .button-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
