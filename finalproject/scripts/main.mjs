@@ -16,4 +16,30 @@ button.addEventListener("click", function () {
     navigation.classList.toggle("open");
     button.classList.toggle("open");
 });
-
+// local storage recording
+const lastVisit = localStorage.getItem("lastVisit");
+const msToDays = 86400000;
+let message = "";
+if (lastVisit == null) {
+    message = "Welcome! Enjoy the content and let us know if you have any questions.";
+    localStorage.setItem("lastVisit", Date.now());
+}
+else {
+    let daysDifference = Math.floor((Date.now() - lastVisit) / msToDays);
+    if (daysDifference < 1) {
+        message = "Back so soon! Awesome!";
+        localStorage.setItem("lastVisit", Date.now());
+    }
+    else {
+        let dayWord = "";
+        if (daysDifference === 1) {
+            dayWord = "day";
+        }
+        else {
+            dayWord = "days";
+        }
+        message = `You last visited ${daysDifference} ${dayWord} ago`;
+        localStorage.setItem("lastVisit", Date.now());
+    }
+}
+document.querySelector("#visit-message").innerHTML = message;
