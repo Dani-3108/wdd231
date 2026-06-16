@@ -1,8 +1,8 @@
 main h1 {
     text-align: center;
 }
-#case-studies-cards {
-    border: none;
+main div {
+    margin-bottom: 1rem;
 }
 main section {
     display: grid;
