@@ -24,8 +24,8 @@
     background-color: #11064a;
     border-top: 1px solid #9783FF;
 }
-.what-we-do h3 {
-    font-size: 1.5rem;
+.what-we-do h2, h3 {
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     font-family: "Fira Code", monospace;
 }
@@ -49,7 +49,6 @@ dialog button {
     border: 1px solid #9783FF;
     color: #9783FF;
     font-size: 1.5rem;
-    padding: 0.25rem;
     position: absolute;
     top: 23px;
     right: 23px;
