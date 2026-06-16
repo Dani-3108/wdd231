@@ -17,25 +17,3 @@ button.addEventListener("click", function () {
     button.classList.toggle("open");
 });
 
-/////////////////
-
-//Form section 
-const products = ["Cameras", "Brain / CPU", "AI Interface"];
-const selectElement = document.getElementById("productName");
-//foor loop section
-if (selectElement) {
-    products.forEach(product => {
-        let option = document.createElement("option");
-        option.setAttribute("value", product)
-        option.textContent = product;
-        selectElement.appendChild(option);
-
-    });
-}
-///
-const company = {
-    name: "UnitX",
-    industry: "Manufacturing",
-    product: "AI Vision Systems"
-};
-console.log(`Company: ${company.name} | Industry: ${company.industry}`);

@@ -13,4 +13,7 @@
     .menu ul {
         display: flex;
     }
+    #results p, #results h3 {
+        text-align: justify;
+    }
 }
